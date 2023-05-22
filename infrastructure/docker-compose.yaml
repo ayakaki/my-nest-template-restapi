@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  db:
+    image: mysql:8.0
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_DATABASE: trial_db
+      MYSQL_USER: user
+      MYSQL_PASSWORD: P_ssw0rd
+      MYSQL_ROOT_PASSWORD: P_ssw0rd
+      MYSQL_ROOT_HOST: '%'
+    volumes:
+      - db_data:/var/lib/mysql1
+      - ./init-db:/docker-entrypoint-initdb.d
+    command: '--default-authentication-plugin=mysql_native_password'
+    ports:
+      - '13306:3306'
+    restart: always
+
+volumes:
+  db_data:
