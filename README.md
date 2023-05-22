@@ -9,7 +9,7 @@ NestJS にてアプリケーションを立ち上げる際のテンプレート�
 | build    | ビルド                                   |
 | start    | アプリケーションの起動                   |
 | dev      | ホットリロードを行うアプリケーション起動 |
-| test     | Jest                                     |
+| test     | Jest 実行                                |
 
 ## FEATURE
 
@@ -27,7 +27,7 @@ NestJS にてアプリケーションを立ち上げる際のテンプレート�
 仮置きで下記のパッケージを使用。
 
 - OR マッパー：[TypeORM](https://www.npmjs.com/package/typeorm)
-- テスティングフレームワーク：[Jest](npm i jest)
+- テスティングフレームワーク：[Jest](https://www.npmjs.com/package/jest)
 
 ## HOW TO USE
 
